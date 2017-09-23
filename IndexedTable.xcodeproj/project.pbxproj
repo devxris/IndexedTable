@@ -54,14 +54,38 @@
 		4526E60F1F76AD96001DBE1C /* IndexedTable */ = {
 			isa = PBXGroup;
 			children = (
-				4526E6101F76AD96001DBE1C /* AppDelegate.swift */,
-				4526E6121F76AD96001DBE1C /* ViewController.swift */,
-				4526E6141F76AD96001DBE1C /* Main.storyboard */,
-				4526E6171F76AD96001DBE1C /* Assets.xcassets */,
-				4526E6191F76AD96001DBE1C /* LaunchScreen.storyboard */,
-				4526E61C1F76AD96001DBE1C /* Info.plist */,
+				4526E6221F76ADF6001DBE1C /* Resources */,
+				4526E6231F76AE01001DBE1C /* View */,
+				4526E6241F76AE09001DBE1C /* Controller */,
 			);
 			path = IndexedTable;
+			sourceTree = "<group>";
+		};
+		4526E6221F76ADF6001DBE1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4526E6171F76AD96001DBE1C /* Assets.xcassets */,
+				4526E61C1F76AD96001DBE1C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4526E6231F76AE01001DBE1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4526E6191F76AD96001DBE1C /* LaunchScreen.storyboard */,
+				4526E6141F76AD96001DBE1C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4526E6241F76AE09001DBE1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4526E6101F76AD96001DBE1C /* AppDelegate.swift */,
+				4526E6121F76AD96001DBE1C /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +299,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = IndexedTable/Info.plist;
+				DEVELOPMENT_TEAM = 9H46LQG73T;
+				INFOPLIST_FILE = "$(SRCROOT)/IndexedTable/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DevXris.IndexedTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +314,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = IndexedTable/Info.plist;
+				DEVELOPMENT_TEAM = 9H46LQG73T;
+				INFOPLIST_FILE = "$(SRCROOT)/IndexedTable/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DevXris.IndexedTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";

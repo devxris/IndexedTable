@@ -58,4 +58,16 @@ class AnimalsTableViewController: UITableViewController {
 		}
 		return cell
 	}
+	
+	// add full index list to tableview
+	private let animalIndexTitles = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+	                                 "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
+	override func sectionIndexTitles(for tableView: UITableView) -> [String]? { return animalIndexTitles }
+	
+	// in case there is no such alphabet in section, eg. "A"
+	override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+		guard let index = animalSectionTitles.index(of: title) else { return -1 }
+		return index
+	}
 }
